@@ -1,0 +1,593 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #565452;
+    background-image:url(../image/img2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.stylish-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #9b5c10, #a49d99);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bounce 2s infinite;
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.text-container {
+    position: absolute;
+    top: 0%;
+    left: 5%; /* Adjust this for better alignment */
+    transform: translateY(-50%);
+    text-align: left;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4); /* Optional: semi-transparent background */
+    border-radius: 10px;
+}
+
+
+
+
+header {
+    background: #242323;
+    color: #484545;
+    padding: 10px 0;
+}
+
+.logo img {
+    color:rgb(241, 234, 234);
+    max-width: 10%;
+    height: auto;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text:hover {
+    font-weight: bold;
+    color: #605858;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #706d6d;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.slogan {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.slogan img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #6f4e37 0%, #4a2c2a 100%);
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #d4a574;
+}
+
+.explore-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #4a2c2a 0%, #6f4e37 100%);
+    color: #d4a574;
+}
+
+.explore-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.explore-button:hover::before {
+    left: 100%;
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content:center ;
+
+}
+.machine {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #a7a0a0;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.machine:hover {
+    background-color: #333333;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.machine-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.machine-link h3{
+    margin: 0;
+}
+
+
+.section-p1{
+    padding:40px 80px;
+    text-align: center;
+    
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-details .details{
+    width:40%;
+}
+
+.contact-details .details span{
+    font-size:12px;
+
+}
+.contact-details .details h1{
+    font-size: 36px;
+    line-height: 35px;
+    padding:20px 0;
+}
+
+.contact-details .details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding:20px 0;
+}
+
+
+
+.contact-details .details li i{
+    font-size: 14px;
+    padding-right:22px;
+}
+
+.explore-button:hover .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.shop {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.product-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 30px;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-card .status, .product-card .price {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.rating {
+    font-size: 14px;
+    color: #333;
+}
+
+.add-to-cart {
+    background: black;
+    color: white;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.course {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.course-details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.course-info {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    
+    border-radius: 10px;
+    text-align: left;
+}
+
+.course-info h2 {
+    margin-top: 20px;
+}
+
+.course-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.course-info form {
+    margin-top: 20px;
+}
+
+.course-info form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.course-info form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.course-info form button {
+    padding: 10px 20px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.course-info form button:hover {
+    background: #333333;
+}
+
+.about-us {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    text-align: center;
+    margin: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    max-width: 300px; /* Adjust this value as needed */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.about-info {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    padding: 30px;
+    background: rgba(200, 197, 197, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px; /* Adjust this value as needed */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Crop the black parts */
+}
+
+.about-info h2 {
+    margin-top: 20px;
+    padding: 20px;
+    
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.location-details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map{
+    text-align: center;
+    width: 500%;
+    width: 600px;
+    height: 300px;
+}
+
+.map{
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+}
+
+.courses {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.courses h1 {
+    text-align: center;
+    font-size: 3em;
+    color: #001f3f;
+}
+
+.course {
+    display: flex;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course img {
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.course-details h2 {
+    color: #001f3f;
+    margin-bottom: 10px;
+}
+
+.course-details p {
+    margin: 10px 0;
+}
+
+.course-details ul {
+    padding-left: 20px;
+}
+
+button {
+    background-color: #423c3b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.login-container {
+    min-height: calc(100vh - 200px);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('image/coffee-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Footer Styles */
+.footer {
+    background: linear-gradient(to bottom, #2c1810 0%, #4a2c2a 100%);
+    color: #e6d5c5;
+    text-align: center;
+    padding: 40px 0 20px 0;
+    margin-top: auto;
+    width: 100%;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(to right, #8b4513, #d2691e, #8b4513);
+}
+
+.footer .social-links {
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.footer .social-links a {
+    color: #e6d5c5;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer .social-links a:hover {
+    color: #d4a574;
+    transform: translateY(-3px);
+}
+
+.footer p {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #b89f8d;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer .footer-section {
+    margin: 20px;
+    min-width: 250px;
+}
+
+.footer .footer-section h4 {
+    color: #d4a574;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .footer-section p {
+    line-height: 1.6;
+}
+
+.footer .footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+main {
+    flex: 1;
+}
